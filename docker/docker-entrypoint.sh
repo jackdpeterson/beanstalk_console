@@ -1,10 +1,6 @@
 #!/bin/bash
 set -e
 
-
-# Change ownership for apache happiness
-chown -R www-data:www-data "${APACHE_DOCROOT}"
-
 if [[ -n "$BEANSTALKD_HOST" ]]; then
 
   if [[ -z "$BEANSTALKD_PORT" ]]; then

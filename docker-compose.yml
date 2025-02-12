@@ -22,17 +22,15 @@ version: '3'
 
 services:
   web:
-    ## Optionally; you can use a ready image changing:
-    ## * `build: .`
-    ## into:
-    ## * image: agaveapi/beanstalkd-console
     build: .
     ports:
-      - 80:80
+      - "80:80"
     environment:
       - BEANSTALKD_HOST=beanstalkd
     links:
       - beanstalkd
+    volumes:
+      - .:/var/www
   beanstalkd:
     image: dinamic/docker-alpine-beanstalkd
     volumes:
