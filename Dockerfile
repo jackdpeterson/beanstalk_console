@@ -5,10 +5,12 @@ ENV APACHE_DOCROOT="/var/www"
 
 RUN apt-get update \
   && apt-get dist-upgrade -y \
+  && apt install -y \
+    libzip-dev \
   && apt autoremove -y \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
-
+RUN docker-php-ext-install zip
 RUN a2enmod rewrite
 
 # Add custom default apache virutal host with combined error and access
