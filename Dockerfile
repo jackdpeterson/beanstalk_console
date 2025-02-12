@@ -23,6 +23,5 @@ RUN chmod +x /usr/local/bin/docker-entrypoint
 CMD ["/usr/local/bin/docker-entrypoint"]
 
 # Add project from current repo to enable automated build
-USER www-data
 WORKDIR "${APACHE_DOCROOT}"
 ADD . ./
