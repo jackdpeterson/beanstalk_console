@@ -36,7 +36,7 @@ if (isset($isNewRecord) && $isNewRecord) {
                 <label class="control-label" for="addsamplename"><b>Name *</b></label>
 
                 <div class="controls form-group">
-                    <input class="input-xlarge focused" id="addsamplename" name="name" type="text" value="<?php echo @htmlspecialchars($job['name']); ?>"
+                    <input class="input-xlarge focused" id="addsamplename" name="name" type="text" value="<?php echo htmlspecialchars($job['name'] ?? ''); ?>"
                            autocomplete="off">
                 </div>
             </div>
@@ -53,7 +53,7 @@ if (isset($isNewRecord) && $isNewRecord) {
                         <?php
                         foreach ($job['tubes'] as $t => $val) {
                             $checked = '';
-                            if (@array_key_exists($t, $job['tubes'])) {
+                            if (array_key_exists($t, $job['tubes'])) {
                                 $checked = 'checked="checked"';
                             }
                             ?>
@@ -109,7 +109,7 @@ if (isset($isNewRecord) && $isNewRecord) {
         </div>
         <div>
             <label class="control-label" for="jobdata"><b>Job data *</b></label>
-            <textarea name="jobdata" id="jobdata" style="width:100%" rows="3"><?php echo @htmlspecialchars($job['data']); ?></textarea>
+            <textarea name="jobdata" id="jobdata" style="width:100%" rows="3"><?php echo htmlspecialchars($job['data'] ?? ''); ?></textarea>
         </div>
     </div>
     <div>
