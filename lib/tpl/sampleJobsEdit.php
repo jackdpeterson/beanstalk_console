@@ -84,7 +84,7 @@ if (isset($isNewRecord) && $isNewRecord) {
                                 <?php
                                 foreach ($tubes as $t) {
                                     $checked = '';
-                                    if (@array_key_exists($t, $job['tubes'])) {
+                                    if (isset($job['tubes']) && is_array($job['tubes']) && array_key_exists($t, $job['tubes'])) {
                                         $checked = 'checked="checked"';
                                     }
                                     ?>
