@@ -6,10 +6,10 @@ on:
 
 jobs:
   static:
-    name: PHPStan, lint and unit tests (PHP 8.5.11)
+    name: PHPStan, lint and unit tests (PHP 8.5.12)
     runs-on: ubuntu-latest
     # Same PHP build as the Docker image.
-    container: php:8.5.11-cli
+    container: php:8.5.12-cli
     steps:
       - name: Install git and unzip for Composer
         run: apt-get update -qq && apt-get install -y -qq git unzip >/dev/null
