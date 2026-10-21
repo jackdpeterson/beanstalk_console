@@ -18,8 +18,12 @@ jobs:
         run: curl -sSL https://getcomposer.org/installer | php -- --quiet --install-dir=/usr/local/bin --filename=composer
       - run: composer validate --no-check-publish
       - run: composer install --no-interaction --no-progress
+      # php -l exits 0 on compile-time deprecations, so fail on any output.
       - name: Lint
-        run: find public lib src tests config.php -name '*.php' -print0 | xargs -0 -n1 php -l >/dev/null
+        run: |
+          out="$(find public lib src tests config.php -name '*.php' -print0 \
+            | xargs -0 -n1 php -d error_reporting=-1 -d display_errors=stderr -l 2>&1 >/dev/null)"
+          if [ -n "$out" ]; then echo "$out"; exit 1; fi
       - run: composer phpstan -- --no-progress
       - run: composer test:unit
 
