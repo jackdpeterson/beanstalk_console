@@ -146,6 +146,8 @@ SAMPLE_KEY="$(docker exec "$NAME-web" php -r 'echo md5("smoke sample");')"
 check "edit sample form"    200 'checked="checked"' "$BASE/?action=editSample&key=$SAMPLE_KEY"
 check "load sample to tube" 302 -                   "$BASE/?$S&$T&action=loadSample&key=$SAMPLE_KEY"
 expect_jobs "$TUBE" ready 2
+# Only ready jobs remain, so the delayed and buried searches find nothing.
+check "search, empty states" 200 'sample'          "$BASE/?$S&$T&action=search&searchStr=sample"
 check "delete sample"       302 -                   "$BASE/?action=deleteSample&key=$SAMPLE_KEY"
 
 check "unreachable server"  200 'unavailable'       "$BASE/?server=nonexistent:11300"
