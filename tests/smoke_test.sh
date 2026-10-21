@@ -34,8 +34,10 @@ PORT="$(docker port "$NAME-web" 8080/tcp | head -1 | sed 's/.*://')"
 BASE="http://127.0.0.1:$PORT"
 SERVER="beanstalkd:11300"
 
+# Poll a static file so the first PHP request (which creates storage.json)
+# goes through check() below.
 for _ in $(seq 1 30); do
-    curl -fs -o /dev/null "$BASE/" && break
+    curl -fs -o /dev/null "$BASE/css/customer.css" && break
     sleep 1
 done
 
@@ -95,6 +97,8 @@ expect_jobs() {
         fail "$1 has $got $2 job(s), expected $3"
     fi
 }
+
+check "first request"       200 'Beanstalk console' "$BASE/"
 
 # Seed one job in each state the UI distinguishes.
 check "add ready job"   200 '"result":true' -X POST "$BASE/?$S&action=addjob" \

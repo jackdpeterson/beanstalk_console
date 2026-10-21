@@ -9,8 +9,10 @@ class Storage implements IStorage {
      */
     const VERSION = '1';
 
+    /** @var string */
     private $file;
-    private $error;
+    /** @var string */
+    private $error = '';
 
     function __construct($config) {
         $this->file = $config;
@@ -23,11 +25,12 @@ class Storage implements IStorage {
         if (!is_file($this->file)) {
             if (!touch($this->file)) {
                 $this->error = "Storage file could not be created. Please create the storage file manually, it must be writable: $this->file";
+                return false;
             }
-            return false;
         }
         if (!is_writable($this->file)) {
             @chmod($this->file, 0755);
+            clearstatcache(true, $this->file);
             if (!is_writable($this->file)) {
                 $this->error = "Please make the storage file writable: $this->file";
                 return false;
