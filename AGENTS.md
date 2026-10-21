@@ -27,8 +27,6 @@ The project uses a lightweight, custom MVC-like structure without a heavy framew
 - **`lib/Pheanstalk/`**: A bundled version of the Pheanstalk library (v2/v1, non-namespaced) used to communicate with the Beanstalkd server.
 - **`lib/tpl/`**: Contains PHP template files (e.g., `main.php`, `allTubes.php`, `currentTube.php`) rendered by the `Console` class.
 - **`src/`**: Contains the core model and utility classes:
-  - `Model.php`: Base model class using magic getters/setters and late static binding.
-  - `Server.php`: Represents a Beanstalkd server instance.
   - `Settings.php`: Manages UI and user-specific settings.
   - `Storage.php` / `IStorage.php`: Handles saving and retrieving sample jobs from `storage.json`.
 - **`public/assets/`, `public/css/`, `public/js/`**: Static assets, stylesheet (`customer.css`), and JavaScript logic (`customer.js` + jQuery plugins).
