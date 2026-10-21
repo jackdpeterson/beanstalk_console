@@ -42,7 +42,12 @@ abstract class Pheanstalk_Command_AbstractCommand
 		// concrete implementation must either:
 		// a) implement Pheanstalk_ResponseParser
 		// b) override this getResponseParser method
-		return $this;
+		if ($this instanceof Pheanstalk_ResponseParser)
+		{
+			return $this;
+		}
+
+		throw new Pheanstalk_Exception(get_class($this) . ' has no response parser');
 	}
 
 	/**
@@ -59,8 +64,9 @@ abstract class Pheanstalk_Command_AbstractCommand
 
 	/**
 	 * Creates a Pheanstalk_Response for the given data
-	 * @param array
-	 * @return object Pheanstalk_Response
+	 * @param string $name
+	 * @param array $data
+	 * @return Pheanstalk_Response
 	 */
 	protected function _createResponse($name, $data = array())
 	{

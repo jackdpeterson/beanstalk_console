@@ -28,7 +28,7 @@ interface Pheanstalk_Socket
 	 * Reads up to the next new-line, or $length - 1 bytes.
 	 * Trailing whitespace is trimmed.
 	 *
-	 * @param int
+	 * @param int $length
 	 */
 	public function getLine($length = null);
 }

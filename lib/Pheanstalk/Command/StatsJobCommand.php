@@ -14,7 +14,7 @@ class Pheanstalk_Command_StatsJobCommand
 	private $_jobId;
 
 	/**
-	 * @param Pheanstalk_Job or int $job
+	 * @param Pheanstalk_Job|int $job
 	 */
 	public function __construct($job)
 	{

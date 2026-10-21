@@ -30,7 +30,7 @@ class Pheanstalk
 	}
 
 	/**
-	 * @param Pheanstalk_Connection
+	 * @param Pheanstalk_Connection $connection
 	 * @chainable
 	 */
 	public function setConnection($connection)
@@ -268,7 +268,7 @@ class Pheanstalk
 	 * available.
 	 *
 	 * @param int $timeout
-	 * @return object Pheanstalk_Job
+	 * @return Pheanstalk_Job|false
 	 */
 	public function reserve($timeout = null)
 	{
@@ -294,7 +294,7 @@ class Pheanstalk
 	/**
 	 * Gives statistical information about the specified job if it exists.
 	 *
-	 * @param Pheanstalk_Job or int $job
+	 * @param Pheanstalk_Job|int $job
 	 * @return object
 	 */
 	public function statsJob($job)

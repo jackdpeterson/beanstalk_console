@@ -28,6 +28,8 @@ class Pheanstalk_Socket_NativeSocket implements Pheanstalk_Socket
 	 */
 	public function __construct($host, $port, $connectTimeout)
 	{
+		$errno = 0;
+		$errstr = '';
 		$this->_socket = $this->_wrapper()
 			->fsockopen($host, $port, $errno, $errstr, $connectTimeout);
 
