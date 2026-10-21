@@ -1,0 +1,3943 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Parameter \#2 \.\.\.\$replacements of function array_replace_recursive expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: config.php
+
+		-
+			message: '#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\.$#'
+			identifier: foreach.nonIterable
+			count: 2
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Cannot call method getData\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Cannot call method getId\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Cannot call method kick\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Cannot call method peekBuried\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Cannot call method peekDelayed\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Cannot call method peekReady\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Cannot call method put\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:_peek\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:_peek\(\) has parameter \$method with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:_peek\(\) has parameter \$tube with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:addJob\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:addJob\(\) has parameter \$tubeData with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:addJob\(\) has parameter \$tubeDelay with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:addJob\(\) has parameter \$tubeName with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:addJob\(\) has parameter \$tubePriority with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:addJob\(\) has parameter \$tubeTtr with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:deleteBuried\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:deleteBuried\(\) has parameter \$tube with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:deleteDelayed\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:deleteDelayed\(\) has parameter \$tube with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:deleteReady\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:deleteReady\(\) has parameter \$tube with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:exceptions_error_handler\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:exceptions_error_handler\(\) has parameter \$filename with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:exceptions_error_handler\(\) has parameter \$lineno with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:exceptions_error_handler\(\) has parameter \$message with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:exceptions_error_handler\(\) has parameter \$severity with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:getContentType\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:getServerStats\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:getServerStatsFields\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:getTubeStats\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:getTubeStats\(\) has parameter \$tube with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:getTubes\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:getTubesStats\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:kick\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:kick\(\) has parameter \$limit with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:kick\(\) has parameter \$tube with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:pauseTube\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:pauseTube\(\) has parameter \$delay with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:pauseTube\(\) has parameter \$tube with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:peekAll\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:peekAll\(\) has parameter \$tube with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:peekBuried\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:peekBuried\(\) has parameter \$tube with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:peekDelayed\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:peekDelayed\(\) has parameter \$tube with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:peekReady\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Method BeanstalkInterface\:\:peekReady\(\) has parameter \$tube with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Parameter \#1 \$job of method Pheanstalk\:\:delete\(\) expects object, mixed given\.$#'
+			identifier: argument.type
+			count: 3
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Parameter \#1 \$job of method Pheanstalk\:\:statsJob\(\) expects int\|Pheanstalk_Job, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Parameter \#1 \$pData of method BeanstalkInterface\:\:_decodeData\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Parameter \#1 \$tube of method Pheanstalk\:\:pauseTube\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Parameter \#1 \$tube of method Pheanstalk\:\:statsTube\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Parameter \#1 \$tube of method Pheanstalk\:\:useTube\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 6
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Parameter \#2 \$delay of method Pheanstalk\:\:pauseTube\(\) expects int, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Parameter \#2 \$tube of method BeanstalkInterface\:\:_decodeData\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Possibly invalid array key type mixed\.$#'
+			identifier: offsetAccess.invalidOffset
+			count: 2
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Property BeanstalkInterface\:\:\$_contentType \(string\|false\|null\) does not accept mixed\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Property BeanstalkInterface\:\:\$_tubes \(list\<string\>\|null\) does not accept list\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: lib/BeanstalkInterface.class.php
+
+		-
+			message: '#^Cannot access offset ''id'' on Pheanstalk_Response\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 6
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Cannot access offset ''jobdata'' on Pheanstalk_Response\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 5
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Cannot access offset ''kicked'' on Pheanstalk_Response\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Cannot access offset ''tube'' on Pheanstalk_Response\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Method Pheanstalk\:\:__construct\(\) has parameter \$connectTimeout with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Method Pheanstalk\:\:_dispatch\(\) should return Pheanstalk_Response but returns object\.$#'
+			identifier: return.type
+			count: 1
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Method Pheanstalk\:\:bury\(\) has parameter \$priority with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Method Pheanstalk\:\:delete\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Method Pheanstalk\:\:ignore\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Method Pheanstalk\:\:kick\(\) should return int but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Method Pheanstalk\:\:kickJob\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Method Pheanstalk\:\:listTubeUsed\(\) should return string but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Method Pheanstalk\:\:listTubes\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Method Pheanstalk\:\:listTubesWatched\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Method Pheanstalk\:\:pauseTube\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Method Pheanstalk\:\:put\(\) should return int but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Method Pheanstalk\:\:release\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Method Pheanstalk\:\:setConnection\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Method Pheanstalk\:\:touch\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Method Pheanstalk\:\:useTube\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Method Pheanstalk\:\:watch\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Parameter \#1 \$id of class Pheanstalk_Job constructor expects int, mixed given\.$#'
+			identifier: argument.type
+			count: 5
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Parameter \#2 \$data of class Pheanstalk_Job constructor expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 5
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Parameter \#2 \$priority of class Pheanstalk_Command_BuryCommand constructor expects int, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Parameter \#3 \$connectTimeout of class Pheanstalk_Connection constructor expects float\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk.php
+
+		-
+			message: '#^Method Pheanstalk_ClassLoader\:\:addPath\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/ClassLoader.php
+
+		-
+			message: '#^Method Pheanstalk_ClassLoader\:\:load\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/ClassLoader.php
+
+		-
+			message: '#^Method Pheanstalk_ClassLoader\:\:register\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/ClassLoader.php
+
+		-
+			message: '#^Parameter \#1 \$array of function array_unique expects an array of values castable to string, array\<mixed\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/ClassLoader.php
+
+		-
+			message: '#^Parameter \#1 \$callback of function array_map expects \(callable\(''__autoload''\|array\{''Pheanstalk_ClassLoader'', ''load''\}\|callable\(string\)\: void\)\: mixed\)\|null, ''spl_autoload…'' given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/ClassLoader.php
+
+		-
+			message: '#^Parameter \#2 \$array of function implode expects array\<string\>, array\<mixed\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/ClassLoader.php
+
+		-
+			message: '#^Parameter \#2 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/ClassLoader.php
+
+		-
+			message: '#^Property Pheanstalk_ClassLoader\:\:\$_path has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/ClassLoader.php
+
+		-
+			message: '#^Method Pheanstalk_Command_AbstractCommand\:\:_createResponse\(\) has parameter \$data with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/Pheanstalk/Command/AbstractCommand.php
+
+		-
+			message: '#^Cannot call method getId\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: lib/Pheanstalk/Command/BuryCommand.php
+
+		-
+			message: '#^Parameter \#2 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Command/BuryCommand.php
+
+		-
+			message: '#^Parameter \#3 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/Pheanstalk/Command/BuryCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_BuryCommand\:\:\$_job has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/BuryCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_BuryCommand\:\:\$_priority has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/BuryCommand.php
+
+		-
+			message: '#^Binary operation "\." between ''delete '' and mixed results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: lib/Pheanstalk/Command/DeleteCommand.php
+
+		-
+			message: '#^Cannot call method getId\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: lib/Pheanstalk/Command/DeleteCommand.php
+
+		-
+			message: '#^Parameter \#2 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Command/DeleteCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_DeleteCommand\:\:\$_job has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/DeleteCommand.php
+
+		-
+			message: '#^Binary operation "\." between ''ignore '' and mixed results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: lib/Pheanstalk/Command/IgnoreCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_IgnoreCommand\:\:\$_tube has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/IgnoreCommand.php
+
+		-
+			message: '#^Binary operation "\." between ''kick '' and mixed results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: lib/Pheanstalk/Command/KickCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_KickCommand\:\:\$_max has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/KickCommand.php
+
+		-
+			message: '#^Binary operation "\." between ''kick\-job '' and mixed results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: lib/Pheanstalk/Command/KickJobCommand.php
+
+		-
+			message: '#^Cannot call method getId\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: lib/Pheanstalk/Command/KickJobCommand.php
+
+		-
+			message: '#^Parameter \#3 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Command/KickJobCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_KickJobCommand\:\:\$_job has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/KickJobCommand.php
+
+		-
+			message: '#^Parameter \#2 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Command/PauseTubeCommand.php
+
+		-
+			message: '#^Parameter \#3 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/Pheanstalk/Command/PauseTubeCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_PauseTubeCommand\:\:\$_delay has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/PauseTubeCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_PauseTubeCommand\:\:\$_tube has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/PauseTubeCommand.php
+
+		-
+			message: '#^Parameter \#2 \$haystack of function in_array expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Command/PeekCommand.php
+
+		-
+			message: '#^Parameter \#2 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 3
+			path: lib/Pheanstalk/Command/PeekCommand.php
+
+		-
+			message: '#^Parameter \#3 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/Pheanstalk/Command/PeekCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_PeekCommand\:\:\$_jobId has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/PeekCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_PeekCommand\:\:\$_subcommand has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/PeekCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_PeekCommand\:\:\$_subcommands has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/PeekCommand.php
+
+		-
+			message: '#^Method Pheanstalk_Command_PutCommand\:\:getData\(\) should return string but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: lib/Pheanstalk/Command/PutCommand.php
+
+		-
+			message: '#^Parameter \#1 \$string of function mb_strlen expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Command/PutCommand.php
+
+		-
+			message: '#^Parameter \#2 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Command/PutCommand.php
+
+		-
+			message: '#^Parameter \#3 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Command/PutCommand.php
+
+		-
+			message: '#^Parameter \#4 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Command/PutCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_PutCommand\:\:\$_data has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/PutCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_PutCommand\:\:\$_delay has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/PutCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_PutCommand\:\:\$_priority has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/PutCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_PutCommand\:\:\$_ttr has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/PutCommand.php
+
+		-
+			message: '#^Cannot call method getId\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 3
+			path: lib/Pheanstalk/Command/ReleaseCommand.php
+
+		-
+			message: '#^Parameter \#2 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 3
+			path: lib/Pheanstalk/Command/ReleaseCommand.php
+
+		-
+			message: '#^Parameter \#3 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Command/ReleaseCommand.php
+
+		-
+			message: '#^Parameter \#4 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Command/ReleaseCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_ReleaseCommand\:\:\$_delay has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/ReleaseCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_ReleaseCommand\:\:\$_job has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/ReleaseCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_ReleaseCommand\:\:\$_priority has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/ReleaseCommand.php
+
+		-
+			message: '#^Parameter \#2 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Command/ReserveCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_ReserveCommand\:\:\$_timeout has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/ReserveCommand.php
+
+		-
+			message: '#^Parameter \#2 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Command/StatsJobCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_StatsJobCommand\:\:\$_jobId has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/StatsJobCommand.php
+
+		-
+			message: '#^Parameter \#2 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Command/StatsTubeCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_StatsTubeCommand\:\:\$_tube has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/StatsTubeCommand.php
+
+		-
+			message: '#^Cannot call method getId\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: lib/Pheanstalk/Command/TouchCommand.php
+
+		-
+			message: '#^Parameter \#2 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/Pheanstalk/Command/TouchCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_TouchCommand\:\:\$_job has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/TouchCommand.php
+
+		-
+			message: '#^Binary operation "\." between ''use '' and mixed results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: lib/Pheanstalk/Command/UseCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_UseCommand\:\:\$_tube has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/UseCommand.php
+
+		-
+			message: '#^Binary operation "\." between ''watch '' and mixed results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: lib/Pheanstalk/Command/WatchCommand.php
+
+		-
+			message: '#^Property Pheanstalk_Command_WatchCommand\:\:\$_tube has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Command/WatchCommand.php
+
+		-
+			message: '#^Binary operation "\." between mixed and "\\r\\n" results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 2
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Call to an undefined method object\:\:getCommandLine\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Call to an undefined method object\:\:getData\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Call to an undefined method object\:\:getResponseParser\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Call to an undefined method object\:\:hasData\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Cannot access offset \(array\<string\>\|string\|null\) on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Cannot call method parseResponse\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Cannot cast object to string\.$#'
+			identifier: cast.string
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Invalid type object to throw\.$#'
+			identifier: throw.notThrowable
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Method Pheanstalk_Connection\:\:_getSocket\(\) should return Pheanstalk_Socket but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Method Pheanstalk_Connection\:\:dispatchCommand\(\) should return object but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Method Pheanstalk_Connection\:\:setSocket\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Parameter \#1 \$host of class Pheanstalk_Socket_NativeSocket constructor expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Parameter \#2 \$haystack of function in_array expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Parameter \#2 \$port of class Pheanstalk_Socket_NativeSocket constructor expects int, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Parameter \#2 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Parameter \#3 \$connectTimeout of class Pheanstalk_Socket_NativeSocket constructor expects int, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Parameter \#3 \$subject of function preg_replace expects array\<float\|int\|string\>\|string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Parameter \#3 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Property Pheanstalk_Connection\:\:\$_connectTimeout has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Property Pheanstalk_Connection\:\:\$_dataResponses has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Property Pheanstalk_Connection\:\:\$_errorResponses has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Property Pheanstalk_Connection\:\:\$_hostname has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Property Pheanstalk_Connection\:\:\$_port has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Property Pheanstalk_Connection\:\:\$_socket has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Connection.php
+
+		-
+			message: '#^Method Pheanstalk_Job\:\:getData\(\) should return string but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: lib/Pheanstalk/Job.php
+
+		-
+			message: '#^Method Pheanstalk_Job\:\:getId\(\) should return int but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: lib/Pheanstalk/Job.php
+
+		-
+			message: '#^Property Pheanstalk_Job\:\:\$_data has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Job.php
+
+		-
+			message: '#^Property Pheanstalk_Job\:\:\$_id has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Job.php
+
+		-
+			message: '#^Class Pheanstalk_Response_ArrayResponse extends generic class ArrayObject but does not specify its types\: TKey, TValue$#'
+			identifier: missingType.generics
+			count: 1
+			path: lib/Pheanstalk/Response/ArrayResponse.php
+
+		-
+			message: '#^Method Pheanstalk_Response_ArrayResponse\:\:__construct\(\) has parameter \$data with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/Pheanstalk/Response/ArrayResponse.php
+
+		-
+			message: '#^Method Pheanstalk_Response_ArrayResponse\:\:__get\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/Response/ArrayResponse.php
+
+		-
+			message: '#^Method Pheanstalk_Response_ArrayResponse\:\:__get\(\) has parameter \$property with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Response/ArrayResponse.php
+
+		-
+			message: '#^Method Pheanstalk_Response_ArrayResponse\:\:__isset\(\) has parameter \$property with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Response/ArrayResponse.php
+
+		-
+			message: '#^Method Pheanstalk_Response_ArrayResponse\:\:getResponseName\(\) should return string but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: lib/Pheanstalk/Response/ArrayResponse.php
+
+		-
+			message: '#^Parameter \#1 \$propertyName of method Pheanstalk_Response_ArrayResponse\:\:_transformPropertyName\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/Pheanstalk/Response/ArrayResponse.php
+
+		-
+			message: '#^Property Pheanstalk_Response_ArrayResponse\:\:\$_name has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Response/ArrayResponse.php
+
+		-
+			message: '#^Method Pheanstalk_Socket\:\:getLine\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/Socket.php
+
+		-
+			message: '#^Method Pheanstalk_Socket\:\:read\(\) has parameter \$length with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket.php
+
+		-
+			message: '#^Binary operation "\+\=" between \(float\|int\) and mixed results in an error\.$#'
+			identifier: assignOp.invalid
+			count: 1
+			path: lib/Pheanstalk/Socket/NativeSocket.php
+
+		-
+			message: '#^Binary operation "\-" between mixed and int\<0, max\> results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: lib/Pheanstalk/Socket/NativeSocket.php
+
+		-
+			message: '#^Cannot call method feof\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: lib/Pheanstalk/Socket/NativeSocket.php
+
+		-
+			message: '#^Cannot call method fgets\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: lib/Pheanstalk/Socket/NativeSocket.php
+
+		-
+			message: '#^Cannot call method fread\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: lib/Pheanstalk/Socket/NativeSocket.php
+
+		-
+			message: '#^Cannot call method fsockopen\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: lib/Pheanstalk/Socket/NativeSocket.php
+
+		-
+			message: '#^Cannot call method fwrite\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: lib/Pheanstalk/Socket/NativeSocket.php
+
+		-
+			message: '#^Cannot call method stream_set_timeout\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: lib/Pheanstalk/Socket/NativeSocket.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_NativeSocket\:\:_wrapper\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/Socket/NativeSocket.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_NativeSocket\:\:getLine\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/Socket/NativeSocket.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_NativeSocket\:\:read\(\) has parameter \$length with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket/NativeSocket.php
+
+		-
+			message: '#^Parameter \#1 \$array of function implode expects array\<string\>, list\<mixed\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Socket/NativeSocket.php
+
+		-
+			message: '#^Parameter \#1 \$string of function rtrim expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Socket/NativeSocket.php
+
+		-
+			message: '#^Parameter \#1 \$string of function strlen expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Socket/NativeSocket.php
+
+		-
+			message: '#^Property Pheanstalk_Socket_NativeSocket\:\:\$_socket has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Socket/NativeSocket.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:feof\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:feof\(\) has parameter \$handle with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:fgets\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:fgets\(\) has parameter \$handle with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:fgets\(\) has parameter \$length with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:fopen\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:fopen\(\) has parameter \$filename with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:fopen\(\) has parameter \$mode with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:fread\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:fread\(\) has parameter \$handle with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:fread\(\) has parameter \$length with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:fsockopen\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:fsockopen\(\) has parameter \$errno with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:fsockopen\(\) has parameter \$errstr with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:fsockopen\(\) has parameter \$hostname with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:fsockopen\(\) has parameter \$port with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:fsockopen\(\) has parameter \$timeout with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:fwrite\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:fwrite\(\) has parameter \$handle with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:fwrite\(\) has parameter \$length with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:fwrite\(\) has parameter \$string with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:instance\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:setInstance\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:setInstance\(\) has parameter \$instance with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:stream_set_timeout\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:stream_set_timeout\(\) has parameter \$microseconds with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:stream_set_timeout\(\) has parameter \$seconds with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:stream_set_timeout\(\) has parameter \$stream with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_StreamFunctions\:\:unsetInstance\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Parameter \#1 \$filename of function fopen expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Parameter \#1 \$hostname of function fsockopen expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Parameter \#1 \$stream of function feof expects resource, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Parameter \#1 \$stream of function fgets expects resource, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Parameter \#1 \$stream of function fread expects resource, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Parameter \#1 \$stream of function fwrite expects resource, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Parameter \#1 \$stream of function stream_set_timeout expects resource, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Parameter \#2 \$data of function fwrite expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Parameter \#2 \$length of function fgets expects int\<0, max\>\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Parameter \#2 \$length of function fread expects int\<1, max\>, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Parameter \#2 \$mode of function fopen expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Parameter \#2 \$port of function fsockopen expects int, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Parameter \#2 \$seconds of function stream_set_timeout expects int, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Parameter \#3 \$length of function fwrite expects int\<0, max\>\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Parameter \#3 \$microseconds of function stream_set_timeout expects int, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Parameter \#5 \$timeout of function fsockopen expects float\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Property Pheanstalk_Socket_StreamFunctions\:\:\$_instance has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Socket/StreamFunctions.php
+
+		-
+			message: '#^Cannot access an offset on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: lib/Pheanstalk/Socket/WriteHistory.php
+
+		-
+			message: '#^Cannot cast mixed to int\.$#'
+			identifier: cast.int
+			count: 1
+			path: lib/Pheanstalk/Socket/WriteHistory.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_WriteHistory\:\:hasWrites\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/Socket/WriteHistory.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_WriteHistory\:\:isFull\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/Socket/WriteHistory.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_WriteHistory\:\:isFullWithNoWrites\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/Socket/WriteHistory.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_WriteHistory\:\:log\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/Pheanstalk/Socket/WriteHistory.php
+
+		-
+			message: '#^Method Pheanstalk_Socket_WriteHistory\:\:log\(\) has parameter \$write with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/Pheanstalk/Socket/WriteHistory.php
+
+		-
+			message: '#^Parameter \#1 \$array of function array_shift expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Socket/WriteHistory.php
+
+		-
+			message: '#^Parameter \#1 \$array of function array_sum expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Socket/WriteHistory.php
+
+		-
+			message: '#^Parameter \#1 \$value of function count expects array\|Countable, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/Socket/WriteHistory.php
+
+		-
+			message: '#^Property Pheanstalk_Socket_WriteHistory\:\:\$_data has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Socket/WriteHistory.php
+
+		-
+			message: '#^Property Pheanstalk_Socket_WriteHistory\:\:\$_limit has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/Socket/WriteHistory.php
+
+		-
+			message: '#^Parameter \#2 \$array of function array_map expects array, list\<string\>\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/Pheanstalk/YamlResponseParser.php
+
+		-
+			message: '#^Property Pheanstalk_YamlResponseParser\:\:\$_mode has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: lib/Pheanstalk/YamlResponseParser.php
+
+		-
+			message: '#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\.$#'
+			identifier: foreach.nonIterable
+			count: 5
+			path: lib/include.php
+
+		-
+			message: '#^Binary operation "\+" between \(array\|float\|int\) and mixed results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 3
+			path: lib/include.php
+
+		-
+			message: '#^Binary operation "\+" between mixed and mixed results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Binary operation "\." between ''Content\-Disposition…'' and mixed results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 3
+			path: lib/include.php
+
+		-
+			message: '#^Binary operation "\." between ''Review batch…'' and mixed results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 2
+			path: lib/include.php
+
+		-
+			message: '#^Binary operation "\." between ''duplicating jobs to '' and mixed results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Binary operation "\." between ''moving jobs to '' and mixed results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''addsamplename'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''age''\|''buries''\|''delay''\|''error_message''\|''file''\|''job_created_at''\|''kicks''\|''original_id''\|''pri''\|''releases''\|''reserves''\|''return_delay''\|''returned_id''\|''review_id''\|''status''\|''target_delay''\|''target_id''\|''target_tube''\|''time\-left''\|''timeouts''\|''ttr'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''cmd\-delete'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''current\-jobs\-buried'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''current\-jobs\-delayed'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''current\-jobs\-ready'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''current\-jobs\-reserved'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''data'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 3
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''enabled'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''id'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''name'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''neverIncludeBodySnapshot'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''review_id'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 4
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''review_tube'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''servers'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''source_server'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''source_tube'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''status'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 4
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''storage'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''tubes'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 3
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''value'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 5
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset string on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: lib/include.php
+
+		-
+			message: '#^Cannot call method getId\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Cannot call method peekBuried\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Cannot call method peekDelayed\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Cannot call method peekReady\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Cannot call method reserve\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Cannot cast mixed to int\.$#'
+			identifier: cast.int
+			count: 36
+			path: lib/include.php
+
+		-
+			message: '#^Cannot use \+\+ on mixed\.$#'
+			identifier: postInc.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Function autoload_class\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Function autoload_class\(\) has parameter \$class with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:__init\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_actionAddSample\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_actionAddjob\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_actionClearTubes\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_actionDelete\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_actionDeleteAll\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_actionDeleteAll\(\) has parameter \$tube with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_actionDeleteJob\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_actionDeleteSample\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_actionEditSample\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_actionKick\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_actionKickJob\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_actionLoadSample\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_actionManageSamples\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_actionMoveJobsTo\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_actionNewSample\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_actionPause\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_actionReloader\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_actionReviewBatchDeleteAll\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_actionSearch\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_actionServersRemove\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_main\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_postDelete\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_storeSampleJob\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_storeSampleJob\(\) has parameter \$jobData with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:_storeSampleJob\(\) has parameter \$post with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:assertReviewBatchOwner\(\) has parameter \$batch with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:assertReviewOperationOwner\(\) has parameter \$operation with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:canPrepareReviewState\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:countReviewBatchesForTube\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:countReviewBatchesForTube\(\) has parameter \$tube with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:deleteAllFromTube\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:deleteAllFromTube\(\) has parameter \$state with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:deleteAllFromTube\(\) has parameter \$tube with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:downloadReviewBatchBodySnapshot\(\) has parameter \$batch with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:downloadReviewBatchCsv\(\) has parameter \$batch with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:findJobsByState\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:findJobsByState\(\) has parameter \$limit with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:findJobsByState\(\) has parameter \$searchStr with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:findJobsByState\(\) has parameter \$state with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:findJobsByState\(\) has parameter \$tube with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getErrors\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getRequestIp\(\) should return string but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getReviewBatchForReviewTube\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getReviewBatchForReviewTube\(\) should return array\|false but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getReviewBatches\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getReviewOperationLabel\(\) has parameter \$operation with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getReviewOperationLabel\(\) should return string but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getReviewOwnerIp\(\) has parameter \$record with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getReviewOwnerIp\(\) should return string but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getReviewSafety\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getReviewSessionId\(\) should return string but returns string\|false\.$#'
+			identifier: return.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getReviewTakeOverBlockReason\(\) has parameter \$batch with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getReviewTakeOverBlockReason\(\) has parameter \$operation with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getSampleJobs\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getSampleJobs\(\) has parameter \$tube with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getSearchResult\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getServerStats\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getServerStats\(\) has parameter \$server with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getServerStatsGroups\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getServers\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getServersConfig\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getServersCookie\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getServersEnv\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getStateCountFromStats\(\) has parameter \$stats with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getTplVars\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getTplVars\(\) has parameter \$var with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getTubeStatFields\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getTubeStatGroups\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:getTubeStatVisible\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:isReviewOwnedByAnotherSession\(\) has parameter \$record with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:jsonResponse\(\) has parameter \$response with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:loadReviewBatchFromRequest\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:loadReviewBatchOperation\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:moveJobsFromTo\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:moveJobsFromTo\(\) has parameter \$destTube with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:moveJobsFromTo\(\) has parameter \$server with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:moveJobsFromTo\(\) has parameter \$state with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:moveJobsFromTo\(\) has parameter \$tube with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:moveJobsToState\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:moveJobsToState\(\) has parameter \$destState with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:moveJobsToState\(\) has parameter \$server with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:moveJobsToState\(\) has parameter \$state with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:moveJobsToState\(\) has parameter \$tube with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:reviewJobHasInspectableCopy\(\) has parameter \$job with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:setTubeBodyDisplayTplVarsForBatch\(\) has parameter \$batch with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:syncReviewBatchFromQueue\(\) has parameter \$batch with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Method Console\:\:syncReviewBatchFromQueue\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$array of function array_diff expects an array of values castable to string, array given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$batchId of method Console\:\:assertNoActiveReviewOperation\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$batchId of method Console\:\:loadReviewBatchOperation\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$batchId of method Console\:\:reviewBatchShowUrl\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 4
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$batchId of method ReviewBatchStorage\:\:appendBodySnapshotRows\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$batchId of method ReviewBatchStorage\:\:appendJob\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$batchId of method ReviewBatchStorage\:\:deleteBatch\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$batchId of method ReviewBatchStorage\:\:getBatchSummary\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 5
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$batchId of method ReviewBatchStorage\:\:getBodySnapshotFile\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$batchId of method ReviewBatchStorage\:\:getJobsByReviewIds\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$batchId of method ReviewBatchStorage\:\:getJobsFile\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$batchId of method ReviewBatchStorage\:\:getMovedJobs\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$batchId of method ReviewBatchStorage\:\:loadOperation\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$batchId of method ReviewBatchStorage\:\:takeOverBatch\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$config of class ReviewBatchStorage constructor expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$id of method ReviewBatchStorage\:\:loadBatch\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 3
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$job of method Pheanstalk\:\:bury\(\) expects Pheanstalk_Job, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$jobId of method Pheanstalk\:\:peek\(\) expects int, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$server of class BeanstalkInterface constructor expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$sourceTube of method Console\:\:getReviewBatches\(\) expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$stats of method Console\:\:getStateCountFromStats\(\) expects array, array\|Pheanstalk_Response_ArrayResponse given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$status of method Console\:\:isReviewJobCleanupStatus\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$stream of function fclose expects resource, resource\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$stream of function fputcsv expects resource, resource\|false given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$string of function htmlspecialchars_decode expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$string of function stripcslashes expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$string of function trim expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 3
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$string of function urlencode expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 7
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$targetServer of method Console\:\:setTubeBodyDisplayTplVars\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$tube of method Console\:\:canPrepareReviewState\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$tube of method Console\:\:getTubeStatValues\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$tube of method Pheanstalk\:\:useTube\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 5
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$tube of method Pheanstalk\:\:watch\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$value of function count expects array\|Countable, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#1 \$value of function intval expects array\|bool\|float\|GMP\|int\|resource\|SimpleXMLElement\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 4
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#2 \$array of function implode expects array\<string\>, array given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#2 \$arrays of function array_diff expects an array of values castable to string, array\<int, mixed\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#2 \$fields of function fputcsv expects array\<int\|string, bool\|float\|int\|string\|null\>, list\<mixed\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#2 \$manifestJob of method ReviewBatchService\:\:operateReviewJob\(\) expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#2 \$needle of function strpos expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#2 \$state of method Console\:\:canPrepareReviewState\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#2 \$state of method Console\:\:getStateCountFromStats\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#2 \$string of function explode expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#2 \$string of function explode expects string, string\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#2 \$targetTube of method Console\:\:setTubeBodyDisplayTplVars\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#2 \$tube of method TubeBodyDisplaySettings\:\:deleteOverride\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#2 \$tube of method TubeBodyDisplaySettings\:\:saveOverride\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#2 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 3
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#3 \$batchId of method Console\:\:setTubeBodyDisplayTplVars\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Parameter \#3 \$subject of function str_replace expects array\<string\>\|string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Possibly invalid array key type mixed\.$#'
+			identifier: offsetAccess.invalidOffset
+			count: 6
+			path: lib/include.php
+
+		-
+			message: '#^Property Console\:\:\$_errors \(list\<string\>\) does not accept non\-empty\-list\<mixed\>\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Property Console\:\:\$_globalVar \(array\{server\: string, action\: string, state\: string, count\: string, tube\: string, _tplMain\: string, _tplBlock\: string, config\: array\<string, mixed\>\}\) does not accept array\{server\: mixed, action\: mixed, state\: mixed, count\: mixed, tube\: mixed, _tplMain\: mixed, _tplBlock\: mixed, config\: mixed\}\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Property Console\:\:\$serversConfig \(array\<string\>\) does not accept array\<mixed\>\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: lib/include.php
+
+		-
+			message: '#^Cannot access offset ''_tplMain'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: public/index.php
+
+		-
+			message: '#^Cannot access offset ''auth'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: public/index.php
+
+		-
+			message: '#^Cannot access offset ''enabled'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: public/index.php
+
+		-
+			message: '#^Cannot access offset ''password'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: public/index.php
+
+		-
+			message: '#^Cannot access offset ''username'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: public/index.php
+
+		-
+			message: '#^Parameter \#1 \$array of function extract expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: public/index.php
+
+		-
+			message: '#^Part \$tplVars\[''_tplMain''\] \(mixed\) of encapsed string cannot be cast to string\.$#'
+			identifier: encapsedStringPart.nonString
+			count: 1
+			path: public/index.php
+
+		-
+			message: '#^Method IStorage\:\:delete\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/IStorage.php
+
+		-
+			message: '#^Method IStorage\:\:delete\(\) has parameter \$key with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/IStorage.php
+
+		-
+			message: '#^Method IStorage\:\:getError\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/IStorage.php
+
+		-
+			message: '#^Method IStorage\:\:getJobs\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/IStorage.php
+
+		-
+			message: '#^Method IStorage\:\:getJobsForTube\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/IStorage.php
+
+		-
+			message: '#^Method IStorage\:\:getJobsForTube\(\) has parameter \$tube with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/IStorage.php
+
+		-
+			message: '#^Method IStorage\:\:isAvailable\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/IStorage.php
+
+		-
+			message: '#^Method IStorage\:\:load\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/IStorage.php
+
+		-
+			message: '#^Method IStorage\:\:load\(\) has parameter \$key with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/IStorage.php
+
+		-
+			message: '#^Method IStorage\:\:saveJob\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/IStorage.php
+
+		-
+			message: '#^Method IStorage\:\:saveJob\(\) has parameter \$arr with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/IStorage.php
+
+		-
+			message: '#^Method JobBodyFormatter\:\:applyDecoders\(\) has parameter \$settings with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/JobBodyFormatter.php
+
+		-
+			message: '#^Method JobBodyFormatter\:\:applyDecoders\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/JobBodyFormatter.php
+
+		-
+			message: '#^Method JobBodyFormatter\:\:decodeForPeek\(\) has parameter \$settings with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/JobBodyFormatter.php
+
+		-
+			message: '#^Method JobBodyFormatter\:\:decodeForPeek\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/JobBodyFormatter.php
+
+		-
+			message: '#^Method JobBodyFormatter\:\:exceptions_error_handler\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/JobBodyFormatter.php
+
+		-
+			message: '#^Method JobBodyFormatter\:\:exceptions_error_handler\(\) has parameter \$filename with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/JobBodyFormatter.php
+
+		-
+			message: '#^Method JobBodyFormatter\:\:exceptions_error_handler\(\) has parameter \$lineno with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/JobBodyFormatter.php
+
+		-
+			message: '#^Method JobBodyFormatter\:\:exceptions_error_handler\(\) has parameter \$message with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/JobBodyFormatter.php
+
+		-
+			message: '#^Method JobBodyFormatter\:\:exceptions_error_handler\(\) has parameter \$severity with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/JobBodyFormatter.php
+
+		-
+			message: '#^Method JobBodyFormatter\:\:formatForDisplay\(\) has parameter \$settings with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/JobBodyFormatter.php
+
+		-
+			message: '#^Method JobBodyFormatter\:\:formatForDisplay\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/JobBodyFormatter.php
+
+		-
+			message: '#^Method ReviewBatchNaming\:\:sanitizeTubePart\(\) should return string but returns string\|null\.$#'
+			identifier: return.type
+			count: 1
+			path: src/ReviewBatchNaming.php
+
+		-
+			message: '#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\.$#'
+			identifier: foreach.nonIterable
+			count: 1
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Cannot access offset ''body'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Cannot access offset ''error_message'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Cannot access offset ''original_id'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Cannot access offset ''review_id'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Cannot access offset ''status'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Cannot access offset mixed on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Cannot cast mixed to int\.$#'
+			identifier: cast.int
+			count: 2
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Method ReviewBatchPageBuilder\:\:buildShowPage\(\) has parameter \$batch with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Method ReviewBatchPageBuilder\:\:buildShowPage\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Method ReviewBatchPageBuilder\:\:formatJobBodyForDisplay\(\) has parameter \$batch with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Method ReviewBatchPageBuilder\:\:formatJobBodyForDisplay\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Method ReviewBatchPageBuilder\:\:getLiveReviewJobBodyDisplay\(\) has parameter \$batch with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Method ReviewBatchPageBuilder\:\:getLiveReviewJobBodyDisplay\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Method ReviewBatchPageBuilder\:\:reviewJobHasInspectableCopy\(\) has parameter \$job with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Parameter \#1 \$batchId of method ReviewBatchStorage\:\:getBatchSummary\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Parameter \#1 \$batchId of method ReviewBatchStorage\:\:getBodySnapshots\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Parameter \#1 \$batchId of method ReviewBatchStorage\:\:loadOperation\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Parameter \#1 \$batchId of method ReviewBatchStorage\:\:updateJob\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Parameter \#1 \$body of method ReviewBatchPageBuilder\:\:formatJobBodyForDisplay\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Parameter \#1 \$body of method ReviewBatchPageBuilder\:\:truncateReviewBody\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Parameter \#1 \$job of method ReviewBatchPageBuilder\:\:reviewJobHasInspectableCopy\(\) expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Parameter \#1 \$server of method TubeBodyDisplaySettings\:\:getEffectiveSettings\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Parameter \#1 \$status of method ReviewBatchPageBuilder\:\:isReviewJobCleanupStatus\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Parameter \#2 \$tube of method TubeBodyDisplaySettings\:\:getEffectiveSettings\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/ReviewBatchPageBuilder.php
+
+		-
+			message: '#^Cannot call method peekBuried\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Cannot call method peekDelayed\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Cannot call method peekReady\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Cannot cast mixed to int\.$#'
+			identifier: cast.int
+			count: 13
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Method ReviewBatchService\:\:buildBodySnapshotRow\(\) has parameter \$row with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Method ReviewBatchService\:\:buildBodySnapshotRow\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Method ReviewBatchService\:\:buildOperationRow\(\) has parameter \$manifestJob with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Method ReviewBatchService\:\:buildOperationRow\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Method ReviewBatchService\:\:buildReviewJobErrorRow\(\) has parameter \$stats with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Method ReviewBatchService\:\:buildReviewJobErrorRow\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Method ReviewBatchService\:\:buildReviewJobRow\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Method ReviewBatchService\:\:operateReviewJob\(\) has parameter \$batch with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Method ReviewBatchService\:\:operateReviewJob\(\) has parameter \$manifestJob with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Method ReviewBatchService\:\:operateReviewJob\(\) has parameter \$operation with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Method ReviewBatchService\:\:peekJobByState\(\) should return Pheanstalk_Job\|false but returns mixed\.$#'
+			identifier: return.type
+			count: 3
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Method ReviewBatchService\:\:processPreparationChunk\(\) has parameter \$batch with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Method ReviewBatchService\:\:processPreparationChunk\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Parameter \#1 \$batchId of method ReviewBatchStorage\:\:appendBodySnapshotRows\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Parameter \#1 \$batchId of method ReviewBatchStorage\:\:appendJob\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Parameter \#1 \$batchId of method ReviewBatchStorage\:\:updateJob\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 7
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Parameter \#1 \$tube of method ReviewBatchService\:\:peekJobByState\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Parameter \#2 \$state of method ReviewBatchService\:\:peekJobByState\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Parameter \#2 \$stats of method ReviewBatchService\:\:buildReviewJobErrorRow\(\) expects array, array\|Pheanstalk_Response_ArrayResponse given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Parameter \#2 \$stats of method ReviewBatchService\:\:buildReviewJobRow\(\) expects array\<string, mixed\>\|Pheanstalk_Response_ArrayResponse, array given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Parameter \#3 \$reviewId of method ReviewBatchService\:\:buildReviewJobErrorRow\(\) expects int\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Parameter \#3 \$reviewId of method ReviewBatchService\:\:buildReviewJobRow\(\) expects int, int\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Parameter \#3 \$reviewId of method ReviewBatchService\:\:buildReviewJobRow\(\) expects int, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchService.php
+
+		-
+			message: '#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\.$#'
+			identifier: foreach.nonIterable
+			count: 2
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Binary operation "\." between ''Review batch…'' and mixed results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Binary operation "\." between ''o\:'' and mixed results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Binary operation "\." between ''r\:'' and mixed results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Cannot access offset ''owner_ip'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Cannot access offset ''review_id'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 3
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Cannot access offset ''snapshot_at'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Cannot access offset ''status'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 5
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Cannot access offset ''storagePath'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Cannot access offset string on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 5
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Cannot cast mixed to int\.$#'
+			identifier: cast.int
+			count: 20
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:__construct\(\) has parameter \$config with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:appendBodySnapshotRows\(\) has parameter \$rows with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:appendJob\(\) has parameter \$row with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:applyCurrentStateRow\(\) has parameter \$current with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:applyCurrentStateRow\(\) has parameter \$row with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:countJobs\(\) should return int but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:createBatch\(\) has parameter \$batch with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:createBatch\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:currentStateJobKey\(\) has parameter \$row with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:decodeBodySnapshotLine\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:emptyCurrentState\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:getBatchSummary\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:getBodySnapshots\(\) has parameter \$reviewIds with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:getBodySnapshots\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:getBodySnapshotsByIndex\(\) has parameter \$filter with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:getBodySnapshotsByIndex\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:getJobs\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:getJobs\(\) should return array but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:getJobsByReviewIds\(\) has parameter \$reviewIds with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:getJobsByReviewIds\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:getMovedJobs\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:listBatches\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:loadBatch\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:loadBatch\(\) should return array\|false but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:loadCurrentState\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:loadCurrentState\(\) should return array but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:loadCurrentStateForAppend\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:loadOperation\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:loadOperation\(\) should return array\|false but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:readCollapsedJobs\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:rebuildCurrentState\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:refreshCurrentStateCounts\(\) has parameter \$current with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:sanitizeId\(\) should return string but returns string\|null\.$#'
+			identifier: return.type
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:saveBatch\(\) has parameter \$batch with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:saveOperation\(\) has parameter \$operation with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:sortBatchesNewestFirst\(\) has parameter \$a with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:sortBatchesNewestFirst\(\) has parameter \$b with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:sortSnapshotOffsetsAscending\(\) has parameter \$a with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:sortSnapshotOffsetsAscending\(\) has parameter \$b with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:startOperation\(\) has parameter \$operation with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:takeOverBatch\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:updateJob\(\) has parameter \$row with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Method ReviewBatchStorage\:\:writeCurrentState\(\) has parameter \$current with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Parameter \#1 \$array of function array_values expects array\<T\>, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Parameter \#1 \$batchId of method ReviewBatchStorage\:\:writeCurrentState\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Parameter \#1 \$id of method ReviewBatchStorage\:\:batchFile\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Parameter \#1 \$id of method ReviewBatchStorage\:\:bodySnapshotFile\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Parameter \#1 \$id of method ReviewBatchStorage\:\:bodySnapshotIndexFile\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Parameter \#1 \$id of method ReviewBatchStorage\:\:jobsFile\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Parameter \#1 \$id of method ReviewBatchStorage\:\:operationFile\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Parameter \#1 \$json of function json_decode expects string, string\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Parameter \#1 \$path of function dirname expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Parameter \#1 \$string of function base64_decode expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Parameter \#1 \$string1 of function strcmp expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Parameter \#1 \$value of function count expects array\|Countable, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Parameter \#1 \.\.\.\$arrays of function array_merge expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Parameter \#2 \$length of function fgets expects int\<0, max\>\|null, int given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Parameter \#2 \$string2 of function strcmp expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Possibly invalid array key type mixed\.$#'
+			identifier: offsetAccess.invalidOffset
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Property ReviewBatchStorage\:\:\$path \(string\) does not accept mixed\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/ReviewBatchStorage.php
+
+		-
+			message: '#^Cannot access offset ''settings'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Settings.php
+
+		-
+			message: '#^Cannot cast mixed to int\.$#'
+			identifier: cast.int
+			count: 1
+			path: src/Settings.php
+
+		-
+			message: '#^Method Settings\:\:getAllDefaults\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Settings.php
+
+		-
+			message: '#^Parameter \#1 \$value of function intval expects array\|bool\|float\|GMP\|int\|resource\|SimpleXMLElement\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Settings.php
+
+		-
+			message: '#^Property Settings\:\:\$configDefaults \(array\) does not accept mixed\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Settings.php
+
+		-
+			message: '#^Property Settings\:\:\$configDefaults type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Settings.php
+
+		-
+			message: '#^Property Settings\:\:\$cookies type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Settings.php
+
+		-
+			message: '#^Cannot access offset ''1'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 10
+			path: src/Storage.php
+
+		-
+			message: '#^Cannot access offset ''jobs'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 7
+			path: src/Storage.php
+
+		-
+			message: '#^Cannot access offset ''name'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 4
+			path: src/Storage.php
+
+		-
+			message: '#^Cannot access offset ''tubes'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 6
+			path: src/Storage.php
+
+		-
+			message: '#^Cannot access offset \(int\|string\) on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 3
+			path: src/Storage.php
+
+		-
+			message: '#^Cannot access offset mixed on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 5
+			path: src/Storage.php
+
+		-
+			message: '#^Cannot access offset non\-falsy\-string on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 3
+			path: src/Storage.php
+
+		-
+			message: '#^Method Storage\:\:__construct\(\) has parameter \$config with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Storage.php
+
+		-
+			message: '#^Method Storage\:\:delete\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Storage.php
+
+		-
+			message: '#^Method Storage\:\:delete\(\) has parameter \$key with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Storage.php
+
+		-
+			message: '#^Method Storage\:\:getError\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Storage.php
+
+		-
+			message: '#^Method Storage\:\:getJobs\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Storage.php
+
+		-
+			message: '#^Method Storage\:\:getJobsForTube\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Storage.php
+
+		-
+			message: '#^Method Storage\:\:getJobsForTube\(\) has parameter \$tubename with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Storage.php
+
+		-
+			message: '#^Method Storage\:\:isAvailable\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Storage.php
+
+		-
+			message: '#^Method Storage\:\:load\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Storage.php
+
+		-
+			message: '#^Method Storage\:\:load\(\) has parameter \$key with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Storage.php
+
+		-
+			message: '#^Method Storage\:\:readCollection\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Storage.php
+
+		-
+			message: '#^Method Storage\:\:save\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Storage.php
+
+		-
+			message: '#^Method Storage\:\:save\(\) has parameter \$arr with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Storage.php
+
+		-
+			message: '#^Method Storage\:\:saveJob\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Storage.php
+
+		-
+			message: '#^Method Storage\:\:saveJob\(\) has parameter \$arr with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Storage.php
+
+		-
+			message: '#^Method Storage\:\:validate\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Storage.php
+
+		-
+			message: '#^Method Storage\:\:validate\(\) has parameter \$arr with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Storage.php
+
+		-
+			message: '#^Method Storage\:\:writeCollection\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Storage.php
+
+		-
+			message: '#^Method Storage\:\:writeCollection\(\) has parameter \$collection with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Storage.php
+
+		-
+			message: '#^Parameter \#1 \$json of function json_decode expects string, string\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Storage.php
+
+		-
+			message: '#^Parameter \#1 \$string of function md5 expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 3
+			path: src/Storage.php
+
+		-
+			message: '#^Property Storage\:\:\$file \(string\) does not accept mixed\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Storage.php
+
+		-
+			message: '#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\.$#'
+			identifier: foreach.nonIterable
+			count: 1
+			path: src/TubeBodyDisplaySettings.php
+
+		-
+			message: '#^Method TubeBodyDisplaySettings\:\:getEffectiveSettings\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/TubeBodyDisplaySettings.php
+
+		-
+			message: '#^Method TubeBodyDisplaySettings\:\:getGlobalSettings\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/TubeBodyDisplaySettings.php
+
+		-
+			message: '#^Method TubeBodyDisplaySettings\:\:getOverride\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/TubeBodyDisplaySettings.php
+
+		-
+			message: '#^Method TubeBodyDisplaySettings\:\:getSettingKeys\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/TubeBodyDisplaySettings.php
+
+		-
+			message: '#^Method TubeBodyDisplaySettings\:\:getSettingKeys\(\) should return array but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/TubeBodyDisplaySettings.php
+
+		-
+			message: '#^Method TubeBodyDisplaySettings\:\:normalizeSettings\(\) has parameter \$fallback with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/TubeBodyDisplaySettings.php
+
+		-
+			message: '#^Method TubeBodyDisplaySettings\:\:normalizeSettings\(\) has parameter \$settings with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/TubeBodyDisplaySettings.php
+
+		-
+			message: '#^Method TubeBodyDisplaySettings\:\:normalizeSettings\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/TubeBodyDisplaySettings.php
+
+		-
+			message: '#^Method TubeBodyDisplaySettings\:\:saveOverride\(\) has parameter \$settings with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/TubeBodyDisplaySettings.php
+
+		-
+			message: '#^Possibly invalid array key type mixed\.$#'
+			identifier: offsetAccess.invalidOffset
+			count: 7
+			path: src/TubeBodyDisplaySettings.php
+
+		-
+			message: '#^Property TubeBodyDisplaySettings\:\:\$keys has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/TubeBodyDisplaySettings.php
+
+		-
+			message: '#^Cannot access offset ''storage'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/TubeBodyDisplayStorage.php
+
+		-
+			message: '#^Cannot access offset string on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 6
+			path: src/TubeBodyDisplayStorage.php
+
+		-
+			message: '#^Method TubeBodyDisplayStorage\:\:__construct\(\) has parameter \$config with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/TubeBodyDisplayStorage.php
+
+		-
+			message: '#^Method TubeBodyDisplayStorage\:\:defaultDocument\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/TubeBodyDisplayStorage.php
+
+		-
+			message: '#^Method TubeBodyDisplayStorage\:\:getOverride\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/TubeBodyDisplayStorage.php
+
+		-
+			message: '#^Method TubeBodyDisplayStorage\:\:read\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/TubeBodyDisplayStorage.php
+
+		-
+			message: '#^Method TubeBodyDisplayStorage\:\:saveOverride\(\) has parameter \$settings with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/TubeBodyDisplayStorage.php
+
+		-
+			message: '#^Method TubeBodyDisplayStorage\:\:write\(\) has parameter \$data with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/TubeBodyDisplayStorage.php
+
+		-
+			message: '#^Parameter \#1 \$path of function dirname expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/TubeBodyDisplayStorage.php
+
+		-
+			message: '#^Parameter \#1 \$value of function count expects array\|Countable, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/TubeBodyDisplayStorage.php
+
+		-
+			message: '#^Property TubeBodyDisplayStorage\:\:\$file \(string\) does not accept mixed\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/TubeBodyDisplayStorage.php
