@@ -44,7 +44,6 @@ class Pheanstalk_Command_KickJobCommand extends Pheanstalk_Command_AbstractComma
         } else {
             throw new Exception('Unhandled response: ' . $responseLine);
         }
-        return $this->_createResponse($responseLine);
     }
 
 }

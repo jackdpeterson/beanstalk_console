@@ -53,7 +53,7 @@ class Pheanstalk_Response_ArrayResponse
 
 	/**
 	 * Tranform underscored property name to hyphenated array key.
-	 * @param string
+	 * @param string $propertyName
 	 * @return string
 	 */
 	private function _transformPropertyName($propertyName)

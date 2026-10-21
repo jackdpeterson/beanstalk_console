@@ -11,7 +11,9 @@ class TubeBodyDisplaySettings {
         'enableJsonDecode',
     );
 
+    /** @var Settings */
     private $settings;
+    /** @var TubeBodyDisplayStorage|null */
     private $storage;
 
     /**
@@ -71,7 +73,7 @@ class TubeBodyDisplaySettings {
      * @throws InvalidArgumentException If override storage cannot be written.
      */
     public function saveOverride($server, $tube, $settings) {
-        $this->storage->saveOverride($server, $tube, $this->normalizeSettings($settings));
+        $this->requireStorage()->saveOverride($server, $tube, $this->normalizeSettings($settings));
     }
 
     /**
@@ -83,7 +85,18 @@ class TubeBodyDisplaySettings {
      * @throws InvalidArgumentException If override storage cannot be written.
      */
     public function deleteOverride($server, $tube) {
-        $this->storage->deleteOverride($server, $tube);
+        $this->requireStorage()->deleteOverride($server, $tube);
+    }
+
+    /**
+     * @return TubeBodyDisplayStorage
+     * @throws InvalidArgumentException If no override storage was configured.
+     */
+    private function requireStorage() {
+        if ($this->storage === null) {
+            throw new InvalidArgumentException('Tube body display storage is not configured');
+        }
+        return $this->storage;
     }
 
     /**

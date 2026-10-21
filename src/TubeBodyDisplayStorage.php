@@ -7,6 +7,7 @@ class TubeBodyDisplayStorage {
 
     const VERSION = 1;
 
+    /** @var string */
     private $file;
 
     /**

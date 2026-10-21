@@ -95,5 +95,7 @@ class Pheanstalk_Command_PeekCommand
 				)
 			);
 		}
+
+		throw new Pheanstalk_Exception('Unhandled response: ' . $responseLine);
 	}
 }

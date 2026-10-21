@@ -18,6 +18,7 @@ class Pheanstalk
 	const DEFAULT_PRIORITY = 1024; // most urgent: 0, least urgent: 4294967295
 	const DEFAULT_TTR = 60; // 1 minute
 
+	/** @var Pheanstalk_Connection */
 	private $_connection;
 
 	/**
@@ -30,7 +31,7 @@ class Pheanstalk
 	}
 
 	/**
-	 * @param Pheanstalk_Connection
+	 * @param Pheanstalk_Connection $connection
 	 * @chainable
 	 */
 	public function setConnection($connection)
@@ -157,7 +158,7 @@ class Pheanstalk
 	 * Inspect a job in the system, regardless of what tube it is in.
 	 *
 	 * @param int $jobId
-	 * @return object Pheanstalk_Job
+	 * @return Pheanstalk_Job
 	 */
 	public function peek($jobId)
 	{
@@ -171,7 +172,7 @@ class Pheanstalk
 	/**
 	 * Inspect the next ready job in the currently used tube.
 	 *
-	 * @return object Pheanstalk_Job
+	 * @return Pheanstalk_Job
 	 */
 	public function peekReady()
 	{
@@ -185,7 +186,7 @@ class Pheanstalk
 	/**
 	 * Inspect the shortest-remaining-delayed job in the currently used tube.
 	 *
-	 * @return object Pheanstalk_Job
+	 * @return Pheanstalk_Job
 	 */
 	public function peekDelayed()
 	{
@@ -199,7 +200,7 @@ class Pheanstalk
 	/**
 	 * Inspect the next job in the list of buried jobs of the currently used tube.
 	 *
-	 * @return object Pheanstalk_Job
+	 * @return Pheanstalk_Job
 	 */
 	public function peekBuried()
 	{
@@ -268,7 +269,7 @@ class Pheanstalk
 	 * available.
 	 *
 	 * @param int $timeout
-	 * @return object Pheanstalk_Job
+	 * @return Pheanstalk_Job|false
 	 */
 	public function reserve($timeout = null)
 	{
@@ -294,33 +295,39 @@ class Pheanstalk
 	/**
 	 * Gives statistical information about the specified job if it exists.
 	 *
-	 * @param Pheanstalk_Job or int $job
-	 * @return object
+	 * @param Pheanstalk_Job|int $job
+	 * @return Pheanstalk_Response_ArrayResponse
 	 */
 	public function statsJob($job)
 	{
-		return $this->_dispatch(new Pheanstalk_Command_StatsJobCommand($job));
+		/** @var Pheanstalk_Response_ArrayResponse $response stats commands use the YAML parser */
+		$response = $this->_dispatch(new Pheanstalk_Command_StatsJobCommand($job));
+		return $response;
 	}
 
 	/**
 	 * Gives statistical information about the specified tube if it exists.
 	 *
 	 * @param string $tube
-	 * @return object
+	 * @return Pheanstalk_Response_ArrayResponse
 	 */
 	public function statsTube($tube)
 	{
-		return $this->_dispatch(new Pheanstalk_Command_StatsTubeCommand($tube));
+		/** @var Pheanstalk_Response_ArrayResponse $response stats commands use the YAML parser */
+		$response = $this->_dispatch(new Pheanstalk_Command_StatsTubeCommand($tube));
+		return $response;
 	}
 
 	/**
 	 * Gives statistical information about the beanstalkd system as a whole.
 	 *
-	 * @return object
+	 * @return Pheanstalk_Response_ArrayResponse
 	 */
 	public function stats()
 	{
-		return $this->_dispatch(new Pheanstalk_Command_StatsCommand());
+		/** @var Pheanstalk_Response_ArrayResponse $response stats commands use the YAML parser */
+		$response = $this->_dispatch(new Pheanstalk_Command_StatsCommand());
+		return $response;
 	}
 
 	/**

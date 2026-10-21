@@ -48,4 +48,4 @@ $visible = $console->getTubeStatVisible();
 $tplVars = $console->getTplVars();
 extract($tplVars);
 
-require_once dirname(__FILE__) . "/../lib/tpl/{$_tplMain}.php";
+require_once dirname(__FILE__) . "/../lib/tpl/{$tplVars['_tplMain']}.php";

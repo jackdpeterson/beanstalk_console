@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    name: Build PHP, lint, PHPStan, unit and smoke tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Same PHP build as the console image; the smoke test below reuses the
+      # cached compile.
+      - name: Build PHP CLI image
+        run: docker build --target cli -t bsc-cli .
+      - name: Install Composer dependencies
+        run: |
+          docker run --rm -v "$PWD":/app -w /app -u "$(id -u):$(id -g)" composer/composer:2 \
+            sh -c 'composer validate --no-check-publish && composer install --no-interaction --no-progress'
+      # php -l exits 0 on compile-time deprecations, so fail on any output.
+      - name: Lint
+        run: |
+          docker run --rm -v "$PWD":/app -w /app bsc-cli sh -c '
+            out="$(find public lib src tests config.php -name "*.php" -print0 \
+              | xargs -0 -n1 php -d error_reporting=-1 -d display_errors=stderr -l 2>&1 >/dev/null)"
+            php -v | head -1
+            if [ -n "$out" ]; then echo "$out"; exit 1; fi'
+      - name: PHPStan
+        run: docker run --rm -v "$PWD":/app -w /app bsc-cli php vendor/bin/phpstan analyse --memory-limit=1G --no-progress
+      - name: Unit tests
+        run: |
+          docker run --rm -v "$PWD":/app -w /app bsc-cli sh -c '
+            for t in tests/*_test.php; do php -d error_reporting=-1 -d display_errors=1 "$t" || exit 1; done'
+      - name: Smoke test
+        run: tests/smoke_test.sh

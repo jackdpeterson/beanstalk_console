@@ -1,0 +1,25 @@
+includes:
+    - vendor/phpstan/phpstan-deprecation-rules/rules.neon
+    # Missing type declarations in pre-existing code (level 6+). Levels 0-5
+    # are clean; new code is held to max.
+    - phpstan-baseline.neon
+
+parameters:
+    level: max
+    phpVersion: 80500
+    paths:
+        - public
+        - lib
+        - src
+        - config.php
+    excludePaths:
+        analyse:
+            # Templates are included from Console::_main() and rely on
+            # include-scoped variables; they are covered by tests/smoke_test.sh.
+            - lib/tpl
+    # The bundled Pheanstalk and older code carry hand-written PHPDoc that is
+    # not always accurate; keep defensive checks instead of trusting it.
+    treatPhpDocTypesAsCertain: false
+    # Exposes response keys as magic properties via __get().
+    universalObjectCratesClasses:
+        - Pheanstalk_Response_ArrayResponse

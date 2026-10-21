@@ -1,0 +1,10 @@
+#!/bin/sh
+# Runs Apache in the foreground as the container's main process.
+set -e
+
+. /etc/apache2/envvars
+
+# A pid file left by an unclean stop would make Apache refuse to start.
+rm -f "${APACHE_PID_FILE:-/var/run/apache2/apache2.pid}"
+
+exec apache2 -DFOREGROUND "$@"

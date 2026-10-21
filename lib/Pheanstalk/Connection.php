@@ -91,7 +91,7 @@ class Pheanstalk_Connection
 			throw new $exception(sprintf(
 				"%s in response to '%s'",
 				$responseName,
-				$command
+				(string) $command
 			));
 		}
 

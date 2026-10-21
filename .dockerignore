@@ -19,3 +19,7 @@ nbproject/
 .vagrant
 vagrant
 Vagrantfile
+
+tests
+phpstan.neon.dist
+phpstan-baseline.neon
