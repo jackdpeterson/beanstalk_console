@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  static:
+    name: PHPStan, lint and unit tests (PHP 8.5.11)
+    runs-on: ubuntu-latest
+    # Same PHP build as the Docker image.
+    container: php:8.5.11-cli
+    steps:
+      - name: Install git and unzip for Composer
+        run: apt-get update -qq && apt-get install -y -qq git unzip >/dev/null
+      - uses: actions/checkout@v4
+      - name: Install Composer
+        run: curl -sSL https://getcomposer.org/installer | php -- --quiet --install-dir=/usr/local/bin --filename=composer
+      - run: composer validate --no-check-publish
+      - run: composer install --no-interaction --no-progress
+      - name: Lint
+        run: find public lib src tests config.php -name '*.php' -print0 | xargs -0 -n1 php -l >/dev/null
+      - run: composer phpstan -- --no-progress
+      - run: composer test:unit
+
+  smoke:
+    name: Docker smoke test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: tests/smoke_test.sh
