@@ -224,11 +224,6 @@ class BeanstalkInterface {
 
     /* INTERNAL */
 
-    /**
-     * Pheanstalk class instance
-     *
-     * @var Pheanstalk
-     */
     private function _peek($tube, $method) {
         try {
             $job = $this->_client->useTube($tube)->{$method}();

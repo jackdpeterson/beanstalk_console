@@ -83,7 +83,7 @@ class JobBodyFormatter {
             set_error_handler(array($this, 'exceptions_error_handler'));
             try {
                 $unserialized = unserialize($display);
-            } catch (Exception $e) {
+            } catch (Exception $e) { // @phpstan-ignore catch.neverThrown (__wakeup()/__unserialize() of classes in the job data can throw)
                 $unserialized = false;
             }
             ob_get_clean();
