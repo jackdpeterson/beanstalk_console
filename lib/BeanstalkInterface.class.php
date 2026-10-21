@@ -2,12 +2,19 @@
 
 class BeanstalkInterface {
 
+    /** @var string|false|null */
     protected $_contentType;
+    /** @var list<string>|null */
     protected $_tubes;
+    /** @var Pheanstalk */
     public $_client;
+    /** @var Settings */
     private $settings;
+    /** @var string */
     private $server;
+    /** @var TubeBodyDisplaySettings */
     private $bodyDisplaySettings;
+    /** @var JobBodyFormatter */
     private $bodyFormatter;
 
     /**
@@ -22,12 +29,12 @@ class BeanstalkInterface {
         $this->server = $server;
         if (strpos($server, "beanstalk://") === 0) {
             $url = parse_url($server);
-            $host = $url['host'];
-            $port = $url['port'];
+            $host = $url['host'] ?? '';
+            $port = $url['port'] ?? Pheanstalk::DEFAULT_PORT;
         } else {
             $list = explode(':', $server);
             $host = $list[0];
-            $port = isset($list[1]) ? $list[1] : '';
+            $port = isset($list[1]) ? (int) $list[1] : Pheanstalk::DEFAULT_PORT;
         }
         $this->_client = new Pheanstalk($host, $port);
         $this->settings = $settings ?? new Settings();

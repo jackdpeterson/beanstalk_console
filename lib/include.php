@@ -45,16 +45,27 @@ class Console {
      * @var BeanstalkInterface
      */
     public $interface;
+    /** @var array<string, mixed> */
     protected $_tplVars = array();
-    protected $_globalVar = array();
+    /** @var array{server: string, action: string, state: string, count: string, tube: string, _tplMain: string, _tplBlock: string, config: array<string, mixed>} */
+    protected $_globalVar;
+    /** @var list<string> */
     protected $_errors = array();
+    /** @var array<array-key, string> */
     private $serversConfig = array();
+    /** @var array<array-key, string> */
     private $serversEnv = array();
+    /** @var array<array-key, string> */
     private $serversCookie = array();
+    /** @var array<string, mixed> */
     private $searchResults = array();
+    /** @var ReviewBatchPageBuilder|null */
     private $reviewBatchPageBuilder = null;
+    /** @var TubeBodyDisplayStorage|null */
     private $tubeBodyDisplayStorage = null;
+    /** @var TubeBodyDisplaySettings|null */
     private $tubeBodyDisplaySettings = null;
+    /** @var float|int */
     private $actionTimeStart = 0;
 
     public function __construct() {
@@ -214,7 +225,7 @@ class Console {
      * Returns stats-tube values, treating a vanished tube as empty.
      *
      * @param string $tube Tube name.
-     * @return array
+     * @return Pheanstalk_Response_ArrayResponse|array{}
      * @throws Pheanstalk_Exception_ServerException If stats-tube fails for a reason other than NOT_FOUND.
      */
     public function getTubeStatValues($tube) {
@@ -563,13 +574,16 @@ class Console {
 
     protected function _postDelete() {
         $arr = $this->getTubeStatValues($this->_globalVar['tube']);
-        $availableJobs = $arr['current-jobs-urgent'] + $arr['current-jobs-ready'] + $arr['current-jobs-reserved'] + $arr['current-jobs-delayed'] + $arr['current-jobs-buried'];
+        $availableJobs = 0;
+        foreach (array('urgent', 'ready', 'reserved', 'delayed', 'buried') as $state) {
+            $availableJobs += (int) ($arr['current-jobs-' . $state] ?? 0);
+        }
         if (empty($availableJobs)) {
             // make sure we redirect to all tubes, as this tube no longer exists
-            $this->_globalVar['tube'] = null;
+            $this->_globalVar['tube'] = '';
         }
         header(
-                sprintf('Location: ./?server=%s&tube=%s', $this->_globalVar['server'], urlencode($this->_globalVar['tube'] ?? '')));
+                sprintf('Location: ./?server=%s&tube=%s', $this->_globalVar['server'], urlencode($this->_globalVar['tube'])));
         exit();
     }
 

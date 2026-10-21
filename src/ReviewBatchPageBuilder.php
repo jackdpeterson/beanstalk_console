@@ -5,9 +5,13 @@
  */
 class ReviewBatchPageBuilder {
 
+    /** @var BeanstalkInterface */
     private $interface;
+    /** @var ReviewBatchStorage */
     private $storage;
+    /** @var TubeBodyDisplaySettings */
     private $bodyDisplaySettings;
+    /** @var JobBodyFormatter */
     private $bodyFormatter;
 
     /**

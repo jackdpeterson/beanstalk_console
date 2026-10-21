@@ -6,8 +6,10 @@
  */
 class ReviewBatchStorage {
 
+    /** @var string */
     private $path;
-    private $error;
+    /** @var string */
+    private $error = '';
 
     /**
      * Resolves the review storage directory from config and verifies it is usable.
@@ -41,6 +43,7 @@ class ReviewBatchStorage {
         }
         if (!is_writable($this->path)) {
             @chmod($this->path, 0777);
+            clearstatcache(true, $this->path);
             if (!is_writable($this->path)) {
                 $this->error = 'Review batch storage directory must be writable: ' . $this->path;
                 return false;

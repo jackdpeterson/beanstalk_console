@@ -5,7 +5,9 @@
  */
 class ReviewBatchService {
 
+    /** @var BeanstalkInterface */
     private $interface;
+    /** @var ReviewBatchStorage */
     private $storage;
 
     /**
@@ -219,7 +221,7 @@ class ReviewBatchService {
      * Builds the audit row describing one review job and its original stats.
      *
      * @param Pheanstalk_Job $job Original beanstalkd job.
-     * @param array $stats Original job stats.
+     * @param Pheanstalk_Response_ArrayResponse|array<string, mixed> $stats Original job stats.
      * @param int $reviewId Review-copy job id.
      * @param string $status Manifest status.
      * @return array
